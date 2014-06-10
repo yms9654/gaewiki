@@ -1,5 +1,5 @@
-application: gaewiki-demo
-version: 1
+application: ymswiki
+version: 1-0-1
 runtime: python
 api_version: 1
 
