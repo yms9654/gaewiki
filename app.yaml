@@ -1,7 +1,8 @@
 application: ymswiki
-version: 1-0-1
-runtime: python
+version: 1-0-2
+runtime: python27
 api_version: 1
+threadsafe: true
 
 handlers:
 - url: /gae-wiki-static/
@@ -10,12 +11,12 @@ handlers:
   static_files: gaewiki/static/favicon.ico
   upload: gaewiki/static/favicon.ico
 - url: .*
-  script: gaewiki
+  script: gaewiki.app
 
 #- url: /static/
 #  static_dir: static
 #- url: .*
 #  script: handlers.py
 
-builtins:
-- datastore_admin: on
+# builtins:
+# - datastore_admin: on
